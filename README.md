@@ -9,6 +9,35 @@ https://student-management-h8r9.onrender.com
 https://github.com/uyaware/student_management
 
 
+### Hướng dẫn chạy local:
+#### 1. Set up database:
+- Set up dbms và **phải tạo trước** database tương ứng với file .env
+```
+POSTGRES_HOST=
+POSTGRES_PORT=
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+# Spring Datasource (su dung cac bien tren)
+DATABASE_URL=jdbc:postgresql://${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+DB_USERNAME=${POSTGRES_USER}
+DB_PASSWORD=${POSTGRES_PASSWORD}
+```
+
+#### 2. Tải các dependency
+```
+./mvnw dependency:resolve
+```
+
+#### 3. Chạy dự án
+```
+./mvnw spring-boot:run
+```
+
+- Truy cập http://localhost:8080/ 
+
+
+
 ### Lab 1:
 ##### 1. Quan sát thông báo lỗi: UNIQUE constraint failed. Tại sao Database lại chặn thao tác này?
 ```sql
