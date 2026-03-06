@@ -2,6 +2,12 @@
 ### Danh sách nhóm:
 Trần Uy - 2213897
 
+#### Link web:
+https://student-management-h8r9.onrender.com
+
+#### Link github:
+https://github.com/uyaware/student_management
+
 
 ### Lab 1:
 ##### 1. Quan sát thông báo lỗi: UNIQUE constraint failed. Tại sao Database lại chặn thao tác này?
